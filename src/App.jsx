@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Buttonremove from "./Buttonremove";
 import NewTodo from "./components/NewTodo";
+import TodoList from "./components/Todolist";
 
 export default function App() {
   const [todos, setTodos] = useState([]);
@@ -40,19 +40,7 @@ export default function App() {
           <NewTodo onNewTodo={onNewTodo} />
         </main>
       </div>
-      <ul className="todo-list">
-        {todos.map((todo) => (
-          <li key={todo.id.toString()}>
-            <span
-              className={[" ", todo.checked ? "checked" : ""].join(" ")}
-              onClick={() => Ontoggle(todo)}
-            >
-              {todo.title}
-            </span>
-            <Buttonremove onRemove={() => remove(todo)} />
-          </li>
-        ))}
-      </ul>
+      <TodoList todos={todos} Ontoggle={Ontoggle} remove={remove} />
     </section>
   );
 }
