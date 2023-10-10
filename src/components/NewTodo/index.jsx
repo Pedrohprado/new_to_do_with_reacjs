@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./styles.css";
 
 export default function NewTodo({ onNewTodo }) {
   const [value, setValue] = useState("");

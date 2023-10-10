@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
+import "./styles.css";
 
 export default function Buttonremove({ onRemove }) {
   const [button, setButton] = useState(true);

@@ -1,4 +1,5 @@
 import Buttonremove from "../Buttonremove";
+import "./styles.css";
 
 export default function TodoList({ todos, Ontoggle, remove }) {
   return (

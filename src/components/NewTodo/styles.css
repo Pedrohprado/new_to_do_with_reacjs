@@ -1,0 +1,11 @@
+.newToDo {
+  outline: none;
+  border: 0.5px solid #bfbfbf;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  width: 80%;
+
+  color: #010101dd;
+  font-weight: 700;
+}

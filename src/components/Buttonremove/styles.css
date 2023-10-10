@@ -1,0 +1,14 @@
+ul li .remove {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  font-weight: 700;
+  color: #900000;
+}
+
+.test button {
+  width: 400px;
+  background-color: rebeccapurple;
+}
